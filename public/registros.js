@@ -6,16 +6,10 @@ function insert_value() {
     $('#mySpinner').addClass('spinner');
 
     var id1= $("#id").val();
-    var nombre= $("#nombre").val();
-    var gender= $("#gender").val();
-    var telefono= $("#telefono").val();
-    var direccion= $("#direccion").val();
-    var territorio= $("#territorio").val();
-    var categoria= $("#categoria").val();
-    var tema= $("#tema").val();
-    var observaciones= $("#observaciones").val();//////////////////
+    var lugar = $("#lugar").val();
+    var tarea = $("#tarea").val();//////////////////
 
-    var url = script_url+"?callback=ctrlq&observaciones="+observaciones+"&tema="+tema+"&categoria="+categoria+"&territorio="+territorio+"&direccion="+direccion+"&telefono="+telefono+"&gender="+gender+"&nombre="+nombre+"&id="+id1+"&action=insert";
+    var url = script_url+"?callback=ctrlq&tarea="+tarea+"&lugar="+lugar+"&id="+id1+"&action=insert";
 
        var request = jQuery.ajax({
          crossDomain: true,
@@ -31,16 +25,10 @@ function insert_value() {
         document.getElementById("loader").style.visibility = "visible";
 
     var id1= $("#id").val();
-    var nombre= $("#nombre").val();
-    var gender= $("#gender").val();
-    var telefono= $("#telefono").val();
-    var direccion= $("#direccion").val();
-    var territorio= $("#territorio").val();
-    var categoria= $("#categoria").val();
-    var tema= $("#tema").val();
-    var observaciones= $("#observaciones").val();//////////////////
+    var lugar = $("#lugar").val();
+    var tarea = $("#tarea").val();//////////////////
 
-    var url = script_url+"?callback=ctrlq&observaciones="+observaciones+"&tema="+tema+"&categoria="+categoria+"&territorio="+territorio+"&direccion="+direccion+"&telefono="+telefono+"&gender="+gender+"&nombre="+nombre+"&id="+id1+"&action=update";
+    var url = script_url+"?callback=ctrlq&tarea="+tarea+"&lugar="+lugar+"&id="+id1+"&action=update";
 
        var request = jQuery.ajax({
          crossDomain: true,
@@ -57,16 +45,10 @@ function insert_value() {
 
     $('#mySpinner').addClass('spinner');
     var id1= $("#id").val();
-    var nombre= $("#nombre").val();
-    var gender= $("#gender").val();
-    var telefono= $("#telefono").val();
-    var direccion= $("#direccion").val();
-    var territorio= $("#territorio").val();
-    var categoria= $("#categoria").val();
-    var tema= $("#tema").val();
-    var observaciones= $("#observaciones").val();//////////////////
+    var lugar = $("#lugar").val();
+    var tarea = $("#tarea").val();//////////////////
 
-    var url = script_url+"?callback=ctrlq&observaciones="+observaciones+"&tema="+tema+"&categoria="+categoria+"&territorio="+territorio+"&direccion="+direccion+"&telefono="+telefono+"&gender="+gender+"&nombre="+nombre+"&id="+id1+"&action=delete";
+    var url = script_url+"?callback=ctrlq&tarea="+tarea+"&lugar="+lugar+"&id="+id1+"&action=delete";
 
        var request = jQuery.ajax({
          crossDomain: true,
@@ -99,24 +81,12 @@ function insert_value() {
      var row = header.insertRow(0);
      var cell1 = row.insertCell(0);
      var cell2 = row.insertCell(1);
-     var cell3 = row.insertCell(2);
-     var cell4 = row.insertCell(3);
-     var cell5 = row.insertCell(4);
-     var cell6 = row.insertCell(5);
-     var cell7 = row.insertCell(6);
-     var cell8 = row.insertCell(7);
-     var cell9 = row.insertCell(8);///////////////////
-     row.style.background = "#000000";
+     var cell3 = row.insertCell(2);///////////////////
+     row.style.background = "black";
 
      cell1.innerHTML = "<b>ID</b>";
-     cell2.innerHTML = "<b>Nombre</b>";
-     cell3.innerHTML = "<b>Sexo</b>";
-     cell4.innerHTML = "<b>Teléfono</b>";
-     cell5.innerHTML = "<b>Dirección</b>";
-     cell6.innerHTML = "<b>Territorio</b>";
-     cell7.innerHTML = "<b>Categoria</b>";
-     cell8.innerHTML = "<b>Tema</b>";
-     cell9.innerHTML = "<b>Observaciones</b>";//////////////////
+     cell2.innerHTML = "<b>Lugar</b>";
+     cell3.innerHTML = "<b>Tarea</b>";//////////////////
 
    //        alert(json.records);
         // masukkan data ke dalam tabel
@@ -128,21 +98,9 @@ function insert_value() {
        var tabCell = tr.insertCell(-1);
        tabCell.innerHTML = json.records[i].ID;
        tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Nombre;
+       tabCell.innerHTML = json.records[i].Lugar;
        tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Sexo;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Teléfono;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Dirección;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Territorio;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Categoria;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Tema;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Observaciones;////////////////
+       tabCell.innerHTML = json.records[i].Tarea;////////////////
                }
            }
             $("#re").html("Datos de la Persona");
@@ -154,21 +112,9 @@ function insert_value() {
        var tabCell = tr.insertCell(-1);
        tabCell.innerHTML = json.records[i].ID;
        tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Nombre;
+       tabCell.innerHTML = json.records[i].Lugar;
        tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Sexo;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Teléfono;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Dirección;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Territorio;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Categoria;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Tema;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Observaciones;////////////////
+       tabCell.innerHTML = json.records[i].Tarea;////////////////
              }
           }
 
@@ -179,14 +125,8 @@ function insert_value() {
         $("#re").css("visibility","visible");
 
         $("#id").val("")
-        $("#nombre").val("")
-        $("#gender").val("")
-        $("#telefono").val("")
-        $("#direccion").val("")
-        $("#territorio").val("")
-        $("#categoria").val("")
-        $("#tema").val("")
-        $("#observaciones").val("")
+        $("#lugar").val("")
+        $("#tarea").val("")
          getData2Input();///////////////////
        });
     }
@@ -207,23 +147,11 @@ function insert_value() {
 
    function tableText(tableRow) {
      var id = tableRow.childNodes[0].innerHTML;
-     var nombre = tableRow.childNodes[1].innerHTML;
-     var gender = tableRow.childNodes[2].innerHTML;
-     var telefono = tableRow.childNodes[3].innerHTML;
-     var direccion = tableRow.childNodes[4].innerHTML;
-     var territorio = tableRow.childNodes[5].innerHTML;
-     var categoria = tableRow.childNodes[6].innerHTML;
-     var tema = tableRow.childNodes[7].innerHTML;
-     var observaciones = tableRow.childNodes[8].innerHTML;//////////
+     var lugar = tableRow.childNodes[1].innerHTML;
+     var tarea = tableRow.childNodes[2].innerHTML;//////////
      $("#id").val(id)
-     $("#nombre").val(nombre)
-     $("#gender").val(gender)
-     $("#telefono").val(telefono)
-     $("#direccion").val(direccion)
-     $("#territorio").val(territorio)
-     $("#categoria").val(categoria)
-     $("#tema").val(tema)
-     $("#observaciones").val(observaciones)
+     $("#lugar").val(lugar)
+     $("#tarea").val(tarea)
    }
 
 
@@ -233,7 +161,7 @@ _gaq.push(['_setDomainName', 'jqueryscript.net']);
 _gaq.push(['_trackPageview']);
 
 var script_url =
-    "https://script.google.com/macros/s/AKfycbz_7zFBqlslQETEEmJItWFLoFPkMCUrkndsAcdzjTd9KicA7gm56j2OrfnA6MnmHGMb/exec"; /////////////////
+    "https://script.google.com/macros/s/AKfycbwzssGdoLD079zfHQYprCdSGF617weYugBoXLw3bYiteeXLWrmXWsy0o4eH1SbyrrxA3g/exec"; /////////////////
 
 (function () {
     var ga = document.createElement('script');
