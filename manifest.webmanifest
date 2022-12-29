@@ -1,0 +1,55 @@
+{
+  "name": "Mis Tareas",
+  "short_name": "Tareas",
+  "description": "Registra tus tareas",
+  "scope": "/Tareas/",
+  "start_url": "/Tareas/",
+  "background_color": "#79a7c6",
+  "theme_color": "#04416c",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/icons/android-chrome-192x19.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/maskable_icon_x192.png",
+      "sizes": "192x192",
+      "type": "image/maskable",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/maskable_icon.png",
+      "sizes": "512x512",
+      "type": "image/maskable",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/maskable_icon_x512.png",
+      "sizes": "512x512",
+      "type": "image/maskable",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshots/s4.webp",
+      "sizes": "480x800",
+      "type": "image/webp"
+    }
+  ],
+  "categories": [
+    "lifestyle",
+    "personalization",
+    "shopping"
+  ],
+  "lang": "en",
+  "orientation": "any"
+}
