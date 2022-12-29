@@ -1,7 +1,7 @@
-var GHPATH = '/Mis-Tareas';
+var GHPATH = '/Tareas';
 var APP_PREFIX = 'Tareas';
 var VERSION = 'version_003';
-var URLS = [    
+var URLS = [
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
   `${GHPATH}/styles/base.css`,
@@ -15,10 +15,10 @@ self.addEventListener('fetch', function (e) {
   console.log('Fetch request : ' + e.request.url);
   e.respondWith(
     caches.match(e.request).then(function (request) {
-      if (request) { 
+      if (request) {
         console.log('Responding with cache : ' + e.request.url);
         return request
-      } else {       
+      } else {
         console.log('File is not cached, fetching : ' + e.request.url);
         return fetch(e.request)
       }
