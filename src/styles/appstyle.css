@@ -7,7 +7,7 @@
 }
 
 .fullbody {
-    background: #e8c4a0;
+    background: #040404;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 .header {
     text-align: center;
     color: white;
-    background: #a8835d;;
+    background: #79439b;
 }
 
 .header a {
@@ -46,13 +46,11 @@ body {
 
 .header {
     text-align: center;
-    display: grid;
-    align-items: center;
     justify-items: center;
     line-height: 1.3;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
     margin: 15px;
     line-height: 1.7;
 }
@@ -62,7 +60,7 @@ body {
     margin-left: auto;
     max-width: 900px;
     line-height: 1.3;
-    background-color: #ffebd3;
+    background-color: #efd3ff;
     padding: 5px;
     margin-right: auto;
     border-radius: 10px;
@@ -72,7 +70,7 @@ body {
 
 .containera {
     line-height: 1.3;
-    background-color: #ffebd3;
+    background-color: #efd3ff;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -235,7 +233,7 @@ img {
     text-align: center;
     font-size: 24px;
     color: #fff;
-    background: linear-gradient(-135deg, #8f6942, #f0cca8);
+    background: linear-gradient(-135deg, #040404, #79439b);
     box-shadow: 0 0 3px 1px;
     border-radius: 20px;
     margin-right: auto;
@@ -258,7 +256,7 @@ img {
     background-color: #410101;
     box-shadow: 0 2px 0 #720101;
     box-shadow: 0 6px 0 #0e1a18;
-    background: linear-gradient(-135deg,#f0cca8 ,#8f6942 );
+    background: linear-gradient(-135deg,#79439b ,#040404 );
 }
 
 p {
@@ -382,6 +380,8 @@ table#myTable {
     position: relative;
     overflow-y: scroll !important;
     max-height: 250px;
+    display: flex;
+    justify-content: center;
 }
 
 .table.bg-white {
@@ -389,7 +389,7 @@ table#myTable {
 }
 
 tr {
-    background-color: #936a41;
+    background-color: #79439b;
 }
 
 table,
@@ -445,7 +445,7 @@ td {
 /*--registros--*/
 .container .form .inputfield {
     line-height: 1.3;
-    background-color: #ffebd3;
+    background-color: #efd3ff;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -457,7 +457,7 @@ td {
 
 .container .form .inputfield label {
     width: 200px;
-    color: #757575;
+    color: #000000;
     margin-right: 10px;
     font-size: 20px;
     text-align: center;
@@ -791,24 +791,21 @@ textarea#direccion,
     font-size: 25px
 }
 
-#Fecha,
-#Nombre,
-#Apellido,
-#Mes,
-input#telefono,
-input#encargado,
+
+input#lugar,
+input#tarea,
 input#id,
 input#srchID,
-input#nombre {
+input#telefono {
     font-size: 24px;
-    background-color: #95fefe;
+    background-color: #a350f5;
     border-radius: 5px;
     max-width: 100%;
     position: relative;
     display: flex;
     text-align: center;
     border: none;
-    border-bottom: 2px solid #005691;
+    border-bottom: 2px solid #510091;
 }
 
   /*--Tabla myTabla-Buscar--*/
