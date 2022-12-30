@@ -1,12 +1,18 @@
 {
-  "name": "Mis Tareas",
-  "short_name": "Tareas",
-  "description": "Registra tus tareas",
+  "id": "Mis-app1",
   "scope": "/Tareas/",
-  "start_url": "/Tareas/",
-  "background_color": "#79a7c6",
-  "theme_color": "#04416c",
+  "name": "Mis Tareas",
   "display": "standalone",
+  "start_url": "/Tareas/",
+  "short_name": "Tareas",
+  "theme_color": "#79a7c6",
+  "description": "No olvides tus tareas, registralas, editalas o borralas cuando las realices.",
+  "orientation": "any",
+  "background_color": "#04416c",
+  "related_applications": [],
+  "dir": "ltr",
+  "lang": "en",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "assets/icons/android-chrome-192x192.png",
@@ -14,7 +20,7 @@
       "type": "image/png"
     },
     {
-      "src": "assets/icons/android-chrome-512x512.png",
+      "src": "android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
@@ -48,8 +54,29 @@
   "categories": [
     "lifestyle",
     "personalization",
+    "shopping",
+    "lifestyle",
+    "personalization",
     "shopping"
   ],
-  "lang": "en",
-  "orientation": "any"
+"share_target": {
+  "action": "decision.php",
+  "method": "POST",
+  "enctype": "multipart/form-data",
+  "params": {
+    "title": "Mis Tareas",
+    "text": "Esta aplicación le proveerá algunas herramientas para cuidar de la congregación",
+    "url": "https://hdez41.github.io/Tareas/",
+    "files": [
+      {
+        "name": "Mis Tareas",
+        "accept": [
+          ".html",
+          ".mhtml",
+          ".htm"
+        ]
+      }
+    ]
+  }
+}
 }
