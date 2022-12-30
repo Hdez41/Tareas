@@ -68,17 +68,30 @@
   <div class="container">
     <header>
       <div class="header">
-        <i><img title="header1" class="img1" src="public/assets/img/tareas2.webp"></i>
-        <h2>Mis tareas</h2>
-      </div>
-      <div class="new-todo">
-        <form id="todoform">
-          <input type="text" name="newtodo" id="newtodo" placeholder="Tengo que ..." />
-          <button type="submit">
-            <i class="bi bi-plus-circle-fill"></i>
-          </button>
-        </form>
-      </div>
+        <div class="list roundBorder">
+          <div class="date">
+            <div class="dateRight">
+              <div id="dateNumber"></div>
+              <div>
+                <div id="dateMonth"></div>
+                <div id="dateYear"></div>
+              </div>
+            </div>
+            <div id="dateText"></div>
+          </div>
+          <div class="title">
+            <i><img title="header1" class="img1" src="public/assets/img/tareas2.webp"></i>
+            <h2>Mis tareas</h2>
+          </div>
+        </div>
+        <div class="new-todo">
+          <form id="todoform">
+            <input type="text" name="newtodo" id="newtodo" placeholder="Tengo que ..." />
+            <button type="submit">
+              <i class="bi bi-plus-circle-fill"></i>
+            </button>
+          </form>
+        </div>
     </header>
     <div id="todos-list">
       <div class="todo" id="0">
