@@ -3,6 +3,10 @@
   "scope": "/Tareas/",
   "name": "Mis Lista de Tareas",
   "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "minimal-ui"
+  ],
   "start_url": "/Tareas/",
   "short_name": "Tareas",
   "theme_color": "#79a7c6",
