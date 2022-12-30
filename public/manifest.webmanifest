@@ -1,12 +1,12 @@
 {
   "id": "Mis-app1",
   "scope": "/Tareas/",
-  "name": "Mis Tareas",
+  "name": "Mis Lista de Tareas",
   "display": "standalone",
   "start_url": "/Tareas/",
   "short_name": "Tareas",
   "theme_color": "#79a7c6",
-  "description": "No olvides tus tareas, registralas, editalas o borralas cuando las realices.",
+  "description": "Registra tus tareas, editalas o borralas cuando las realices.",
   "orientation": "any",
   "background_color": "#04416c",
   "related_applications": [],
@@ -64,12 +64,12 @@
   "method": "POST",
   "enctype": "multipart/form-data",
   "params": {
-    "title": "Mis Tareas",
+    "title": "Mis Lista de Tareas",
     "text": "Esta aplicación le proveerá algunas herramientas para cuidar de la congregación",
     "url": "https://hdez41.github.io/Tareas/",
     "files": [
       {
-        "name": "Mis Tareas",
+        "name": "Mis Lista de Tareas",
         "accept": [
           ".html",
           ".mhtml",
