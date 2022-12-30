@@ -67,7 +67,7 @@ function renderTodos() {
   todos.forEach((todo, index) => {
     todosListEl.innerHTML += `
     <div class="todo" id=${index}>
-      <i 
+      <i
         class="bi ${todo.checked ? 'bi-check-circle-fill' : 'bi-circle'}"
         style="color : ${todo.color}"
         data-action="check"
@@ -139,3 +139,20 @@ function showNotification(msg) {
     notificationEl.classList.remove('notif-enter');
   }, 2000);
 }
+
+// Info date
+const dateNumber = document.getElementById('dateNumber');
+const dateText = document.getElementById('dateText');
+const dateMonth = document.getElementById('dateMonth');
+const dateYear = document.getElementById('dateYear');
+
+// Tasks Container
+const setDate = () => {
+    const date = new Date();
+    dateNumber.textContent = date.toLocaleString('es', { day: 'numeric' });
+    dateText.textContent = date.toLocaleString('es', { weekday: 'long' });
+    dateMonth.textContent = date.toLocaleString('es', { month: 'short' });
+    dateYear.textContent = date.toLocaleString('es', { year: 'numeric' });
+};
+
+setDate();
