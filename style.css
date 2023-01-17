@@ -24,13 +24,14 @@ body {
   justify-content: center;
   background-color: black;
 }
-
 .container {
   background-color: #5d00b0;
   width: var(--contaier-width);
+  /* height: var(--container-height); */
   position: relative;
   overflow: hidden;
   border-radius: 20px;
+  padding-bottom: 30px;
 }
 header {
   width: 100%;
@@ -93,11 +94,14 @@ header {
 #todos-list {
   height: calc(var(--container-height) - var(--header-height));
   background-color: #ecd8f9;
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
   border: 1px solid rgb(219, 219, 219);
   overflow: scroll;
   border-radius: 0 0 5px 5px;
   margin-top: 50px;
+  padding-bottom: 40px;
 }
 
 #todos-list .todo {
